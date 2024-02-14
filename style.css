@@ -1,0 +1,152 @@
+.cssimg {
+    position: relative;
+    height:50px;
+    width:50px;
+    background-color: blue;
+    border-radius: 50%;
+    display:flex;
+}
+
+
+.cssimg-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding:40px;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-size:cover;
+    background-image: url("JAlogo.jpg");
+    width: 50px;
+    height:50px;
+    z-index: 1;
+    position: relative;
+    left:-30%;
+    color:black;
+
+
+    animation-duration: 8s;
+    animation-name: rollball;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size:0px;
+
+   /* top:194px; */
+
+
+    transition:
+        width 2s,
+        height 2s,
+        font-weight 2s,
+
+        font-size 2s;
+}
+
+@keyframes rollball {
+    from {
+        left: -30%;
+
+    }
+
+    to {
+        left: 30%;
+
+    }
+}
+
+.red:hover {
+
+    width: 156px;
+    height: 150px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.balltext {
+   padding: 10%;
+   margin: 10% 5%;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   text-align: center;
+   color: aqua;
+   text-shadow: red 1px 1px 2px;
+}
+
+.left {
+    left: 15px;
+
+}
+
+.right {
+    right:15px;
+}
+
+
+
+
+body {
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+nav a {
+    text-decoration: none;
+}
+
+nav {
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+p {
+    margin: 30px;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding: 2%;
+    line-height: 1.5;
+}
+
+.logo {
+    background-size:cover;
+    background-image: url("JAlogo.jpg");
+    width: 110px;
+    height:106px;
+    top: 20px;
+    position:relative;
+
+}
+
+.up {
+    bottom: 30px;
+    position: relative;
+}
