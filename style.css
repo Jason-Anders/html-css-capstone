@@ -1,3 +1,4 @@
+/*img motion profile*/
 .cssimg {
     position: relative;
     height:50px;
@@ -45,9 +46,6 @@
     animation-direction: alternate;
     font-size:0px;
 
-   /* top:194px; */
-
-
     transition:
         width 2s,
         height 2s,
@@ -87,6 +85,8 @@
    text-shadow: red 1px 1px 2px, black 1px -1px 2px, blue -1px -1px 2px, yellow -1px 1px 2px;
 }
 
+/* end img motion */
+
 .left {
     left: 15px;
 
@@ -120,6 +120,7 @@ nav {
     border-top: solid black 1px;
     border-bottom: solid black 1px;
     min-width: 660px;
+
 }
 
 h1, h2 {
@@ -169,7 +170,7 @@ p {
 
 }
 
-.cell3x2 {
+.cen {
     text-align: center;
 }
 
@@ -192,4 +193,26 @@ p {
 
 .ph-list-li {
     padding-right: 36px;
+}
+
+/*Form*/
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 20%;
+    line-height: 2;
+    background-color: whitesmoke;
+}
+
+button {
+    width:140px;
+    align-self: center;
+    margin-top: 15%;
+    padding: 5px;
+    background-color: white;
+}
+
+textarea {
+    min-height: 100px;
 }

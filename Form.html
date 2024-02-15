@@ -9,10 +9,47 @@
         <nav>
             <ul>
                 <li><a href="profile.html">Overview</a></li>
-                <li><a href="#">Form</a></li>
+                <li><a href="#">Contact Me</a></li>
                 <li><a href="EdnEx.html">Education &amp; Experience</a></li>
                 <li><a href="CPs.html">Working to Wireframes</a></li>
             </ul>
         </nav>
+        <!--form data would be sanitized/ validated by a php file and then sent to destination-->
+        <h1>Software Developer for Hire</h1>
+        <p class="cen">
+            <em>Too much work? Not enough people? Searching for a Software Developer?</em>
+        </p>
+        <p class="cen">If this sounds like you then complete this form with your information and I will contact you if it seems like a good fit</p>
+        <form action="" method="post">
+
+            <fieldset>
+            <legend>Contact Form</legend>
+
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+
+                    <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="last_name">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email_address" size="26">
+            </div>
+            <div>
+                <label for="newsletter">Email Resum&eacute;</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+            </div>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments">
+
+                </textarea>
+                <button type="submit">Submit</button>
+            </fieldset>
+
+        </form>
     </body>
 </html>
